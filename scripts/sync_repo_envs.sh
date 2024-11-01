@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-LOCALREPO="$HOME/Documentos/research/repos/dotfiles"
+LOCALREPO="$HOME/Documentos/research/repos/dotfiles2"
 
 echo "creating a dir and cloning the repo"
 
@@ -10,7 +10,7 @@ if [ ! -d "$LOCALREPO" ]; then
 	git clone https://github.com/luanlaryz/dotfiles.git $LOCALREPO
 fi
 
-echo "coping dotfiles TO $HOME FROM repo"
+echo "coping dotfiles FROM $HOME TO repo"
 
 
 files=(".vimrc" ".zshrc" ".tmux.conf")
@@ -18,9 +18,9 @@ files=(".vimrc" ".zshrc" ".tmux.conf")
 
 for file in "${files[@]}"; do
 	echo "coping $file"
-	cp  "$LOCALREPO/$file" $HOME/$file
+	cp  "$HOME/$file" "$LOCALREPO/$file" 
 done
 
-echo "All files have been copied to your local home, please restart your shell.. :) "
+echo "All files have been UPDATED please check and commit tham :) "
 
 
