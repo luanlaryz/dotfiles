@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-LOCALREPO="$HOME/Documentos/research/repos/dotfiles2"
+LOCALREPO="$HOME/Documentos/research/repos/dotfiles"
 
 echo "creating a dir and cloning the repo"
 
